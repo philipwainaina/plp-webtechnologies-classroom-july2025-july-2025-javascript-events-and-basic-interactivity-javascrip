@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Interactive Web Page</h1>
+    <nav>
+      <a href="#form-section">Form</a> |
+      <a href="#counter-section">Counter</a> |
+      <a href="#toggle-section">Toggle Text</a>
+    </nav>
+  </header>
+
+  <!-- FORM SECTION -->
+  <section id="form-section">
+    <h2>Sign Up Form</h2>
+    <form id="signupForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username"><br>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email"><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br>
+
+      <button type="submit">Submit</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <!-- COUNTER SECTION -->
+  <section id="counter-section">
+    <h2>Interactive Counter</h2>
+    <p>Click the buttons to change the count:</p>
+    <button id="decreaseBtn">-</button>
+    <span id="counterValue">0</span>
+    <button id="increaseBtn">+</button>
+  </section>
+
+  <!-- TOGGLE SECTION -->
+  <section id="toggle-section">
+    <h2>Show / Hide Information</h2>
+    <button id="toggleBtn">Show Info</button>
+    <p id="hiddenText" style="display: none;">
+      This is some hidden text that appears when you click the button.
+    </p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
